@@ -1,10 +1,12 @@
+import Main from "./components/Main"
+
 function App() {
 
-  return (
-    <>
-
-    </>
-  )
+	return (
+		<>
+			<Main />
+		</>
+	)
 }
 
 export default App
