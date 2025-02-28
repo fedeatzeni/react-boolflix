@@ -40,7 +40,7 @@ function App() {
 	return (
 		<>
 			<GlobalContext.Provider value={{ resultFilms, resultSeries }}>
-				<Header onSubmit={handleSubmit} value={search} onChange={event => setSearch(event.target.value)}/>
+				<Header onSubmit={handleSubmit} value={search} onChange={event => setSearch(event.target.value)} />
 				<Main />
 			</GlobalContext.Provider>
 		</>

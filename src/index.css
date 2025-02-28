@@ -1,6 +1,59 @@
-ul img {
-    max-height: 200px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-li img {
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header h1 {
+    color: red;
+}
+
+main {
+    padding: 0 10px;
+}
+
+main .list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+main .card {
+    flex-basis: 16%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+main .card>img {
+    max-height: 100%;
+    position: absolute;
+}
+
+main .card>img:hover {
+    opacity: 0;
+}
+
+main .card li {
+    max-width: 80%;
+    list-style: none;
+}
+
+
+main .card li img {
     max-width: 30px;
 }

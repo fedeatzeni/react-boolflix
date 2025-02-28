@@ -30,12 +30,14 @@ export default function Card(props) {
     const originalTitle = el.original_title !== undefined ? el.original_title : el.original_name;
 
     return (
-        <ul>
-            <h3>{Title}</h3>
-            <img src={"https://image.tmdb.org/t/p/" + "w342" + el.poster_path} alt={Title} />
-            <li>{originalTitle}</li>
-            <li>{<img src={flag(el.original_language)} alt={el.original_language} />}</li>
-            <li>{el.vote_average !== 0 ? stars(el.vote_average) : "nessuna valutazione"}</li>
-        </ul>
+        <div className="card">
+            <img src={"https://image.tmdb.org/t/p/" + "w342" + el.poster_path} alt={""} />
+            <ul>
+                <li><strong>Titolo:</strong>{Title}</li>
+                <li><strong>Titolo Originale:</strong>{originalTitle}</li>
+                <li>{<img src={flag(el.original_language)} alt={el.original_language} />}</li>
+                <li>{el.vote_average !== 0 ? stars(el.vote_average) : "nessuna valutazione"}</li>
+            </ul>
+        </div>
     )
 }
