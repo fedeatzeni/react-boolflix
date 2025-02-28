@@ -35,8 +35,9 @@ export default function Card(props) {
             <ul>
                 <li><strong>Titolo:</strong>{Title}</li>
                 <li><strong>Titolo Originale:</strong>{originalTitle}</li>
-                <li>{<img src={flag(el.original_language)} alt={el.original_language} />}</li>
-                <li>{el.vote_average !== 0 ? stars(el.vote_average) : "nessuna valutazione"}</li>
+                <li><strong>Lingua Originale:</strong>{<img src={flag(el.original_language)} alt={el.original_language} />}</li>
+                <li><strong>Voto:</strong>{el.vote_average !== 0 ? stars(el.vote_average) : "nessuna valutazione"}</li>
+                <li><strong>Overview:</strong>{el.overview}</li>
             </ul>
         </div>
     )

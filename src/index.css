@@ -37,6 +37,7 @@ main .card {
     position: relative;
     height: 300px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 main .card>img {
@@ -51,6 +52,7 @@ main .card>img:hover {
 main .card li {
     max-width: 80%;
     list-style: none;
+    text-overflow: ellipsis;
 }
 
 

@@ -19,6 +19,7 @@ function App() {
 	function handleSubmit() {
 		event.preventDefault();
 
+		//films
 		axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${search}&language=it-IT`)
 			.then(res => {
 				//console.log(res.data.results);
